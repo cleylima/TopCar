@@ -193,3 +193,65 @@ h2 {
 .indicators .active {
     background: #fff;
 }
+
+/* Responsivo */
+@media (max-width: 1200px) {
+    header {
+        width: 90vw;
+        grid-template-columns: 1fr 1fr;
+        gap: 20%;
+    }
+    
+    .list {
+        width: 80vw;
+    }
+
+    .content {
+        width: 90%;
+        right: 0;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .arrows {
+        width: 80vw;
+    }
+
+    .indicators {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .arrows {
+        width: 90vw;
+    }
+
+    .indicators {
+        width: 90vw;
+    }
+
+    .car_img img {
+        transform: rotate(0deg);
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+}
